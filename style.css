@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+input{
+    width: 240px;
+    padding: 4px;
+}
+textarea{
+    width: 240px;
+}
+#gender, #relign{
+    width: 20px;
+    
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="container justify-content-center  ">
+        <div class="col-4  me-auto ms-auto ">
+        <form name="myform" method="post" action="" class="ps-5 bg-info pb-4 mt-5 fw-bold">
+            <h2 class="text-white fw-bold text-center pt-3">Validation Form</h2>
+            <div class=""><label>
+                    NAME</label></div>
+            <div>
+                <div><input type="text" name="name" id="name" placeholder="Enter your  name "></div>
+                <span class="text-danger" id="nameerr"></span>
+                <div class=""><label>
+                   REG NO</label></div>
+            <div>
+                <div><input type="text" name="name" id="rno" placeholder="Enter Your Reg Number "></div>
+                <span class="text-danger" id="rnoerr"></span>
+                <div><label>FATHER NAME</label></div>
+                <div><input type="text" name="class" id="fname" placeholder="Enter Your Father Name"></div>
+                <span class="text-danger" id="fnameerr"></span>
+                <div><label>DEPARMENT</label>
+                </div>
+                <div >
+                    <select id="dep" >
+                        <option value="" >Please select your department</option>
+                        <option >Computer Science</option>
+                        <option>Commerce</option>
+                        <option>Tamil</option>
+                        <option>English</option>
+                        <option>Maths</option>
+                    </select>
+                </div>
+                <span class="text-danger " id="subjecterr"></span>
+                <div><label>CLASS</label></div>
+                <div><input type="text" name="class" id="_class" placeholder="Enter your class name"></div>
+                <span class="text-danger" id="classerr"></span>
+
+                <div><label>GENDER</label>
+                </div>
+                <div class="fw-bold ps-3">
+                    <input type="radio" name="gender" id="gender" value="Female">Female
+                    <input type="radio" name="gender" id="gender" value="Male">Male
+                </div>
+                <span class="text-danger " id="gendererr"></span>
+                <div><label>RELIGN</label>
+                </div>
+                <div class="fw-bold ps-3  ">
+                    <input type="radio" name="rel" id="relign" value="Hindu">Hindu
+                    <input type="radio" name="rel" id="relign" value="Muslim">Muslim
+                </div>
+                <span class="text-danger " id="relignerr"></span>
+                <div><label> DOB</label>
+                </div>
+
+                <div><input type="date" name="dob" placeholder="Dob" id="dob"></textarea></div>
+                <span class="text-danger " id="doberr"></span>
+                <div><label> PHONE NO</label>
+                </div>
+                <div><input type="text" placeholder="Phone Number" id="pno"></textarea></div>
+                <span class="text-danger " id="pnoerr"></span>
+                <div><label> ADDRESS</label>
+                </div>
+                <div><textarea name="add" placeholder="Address" id="address"></textarea></div>
+                <span class="text-danger " id="adderr"></span>
+                <div>
+                    <input type="button" class="bg-success border-0 rounded p-2" value="Submit"
+                        onclick=" return validateform()" />
+                </div>
+            </div>
+        </form>
+
+    </div>
+
+
+</body>
+<script src="index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+</html>
